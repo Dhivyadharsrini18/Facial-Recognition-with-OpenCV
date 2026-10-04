@@ -1,0 +1,36 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Dataset  (private facial images — do NOT commit)
+dataset/raw/*
+dataset/processed/*
+dataset/test/*
+!dataset/raw/.gitkeep
+!dataset/processed/.gitkeep
+!dataset/test/.gitkeep
+
+# Trained models  (contain biometric data)
+models/*.pkl
+models/*.yml
+
+# Results  (generated output)
+results/detected_faces/*
+results/recognition_results/*
+results/evaluation/*
+results/plots/*
+!results/detected_faces/.gitkeep
+!results/recognition_results/.gitkeep
+!results/evaluation/.gitkeep
+!results/plots/.gitkeep
